@@ -157,8 +157,11 @@ function rockPaperScissors(myHand) {
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-let convertKM = 3
-//console.log(convertKM / 1.609)
+function makeImperial(convertKM){
+   return convertKM / 1.609
+}
+
+//console.log(makeImperial(3)) 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
