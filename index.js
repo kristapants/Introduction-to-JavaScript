@@ -1,10 +1,10 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-var votingAge = 33
+var votingAge = 33 //declared a variable
 
-if (votingAge >= 18) {
-    //console.log('True')
+if (votingAge >= 18) { //checks if variable entered is greater or equal to 18
+    //console.log('True') //console log will only happen if the check is true
 }
 
 
@@ -12,22 +12,22 @@ if (votingAge >= 18) {
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-let dinner = 'well, this does not work';
-let deanIsHungry = false;
+let dinner = 'well, this does not work'; //variable dinner given value that should never print for testing purposes
+let deanIsHungry = false; //false-ish text works for this value. 
 
-if (deanIsHungry){
+if (deanIsHungry){ //true or 1 will return that dean is hungry and dinner is hamborgers. 
     dinner = 'Hamborgers';
 } else {
-    dinner = 'Forage for yourself';
+    dinner = 'Forage for yourself'; //false, 0, or any other entry will return that he is not hungry and to forage
 }
-//console.log(dinner);
+//console.log(dinner); 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-var string = '1999'
-//console.log(string.valueOf()) 
+var string = '1999' //set a string to be 1999, not integer
+//console.log(string.valueOf())  //prints the previous string as an integer
 
 
 
@@ -35,12 +35,10 @@ var string = '1999'
 
 //Task d: Write a function to multiply a*b 
 
-function taskD(a, b){
-    return a * b;
+function taskD(a, b){  //creates a function that takes two inputs called a and b
+    return a * b; //the function will return the value of a multiplied by b
 }
-
-let c = taskD(2, 8);
-//console.log(c)
+//console.log(taskD(2, 8)); //prints the returned value from function
 
 
 
@@ -48,11 +46,11 @@ let c = taskD(2, 8);
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-function dogYears(humanAge){
-    return humanAge * 7;
+function dogYears(humanAge){ //creates a function called dogYears with an input variable called humanAge
+    return humanAge * 7; //returns the value of the input humanAge multiplied by 7
 }
 
-let myDogAge = dogYears(33);
+let myDogAge = dogYears(33); //declares myDogAge to be the returned value from the dogYears function using a humanAge value of 33
 //console.log(myDogAge);
 
 
@@ -75,12 +73,12 @@ let myDogAge = dogYears(33);
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-function feedDog(dogAge, dogWeight) {
-    let poundsFed = 0;
-    if (dogAge < 1) {
-        if (dogAge >= 0.17 && dogAge <= 0.33) {
+function feedDog(dogAge, dogWeight) { //function feedDog takes two inputs, dogAge and dogWeight
+    let poundsFed = 0; //pounds fed starts at 0. a dog less than 2 months, or .17 of a year, old will return 0
+    if (dogAge < 1) { //if the dog is less than a year old, it will follow these rules, otherwise skip to line 86
+        if (dogAge >= 0.17 && dogAge <= 0.33) { //dog age between these ages goes to next line, otherwise skip to 81
             poundsFed = dogWeight * 0.1;
-        } else if (dogAge >=0.34 && dogAge <=0.58) { 
+        } else if (dogAge >=0.34 && dogAge <=0.58) { //dog age between these ages goes to next line, otherwise skip to 81
             poundsFed = dogWeight * 0.05;
         } else if (dogAge >=0.59) {
             poundsFed = dogWeight * 0.04;
